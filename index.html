@@ -47,11 +47,11 @@ h2{font-size:clamp(22px,3vw,30px);font-weight:600;color:var(--g700);line-height:
 
 /* ---------- header ---------- */
 header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);z-index:50;border-bottom:1px solid var(--line)}
-.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-.topbar img{height:42px;width:auto;display:block}
-.logo-fallback{font-weight:800;font-size:25px;color:var(--g700);letter-spacing:.02em}
-.report-tag{font-size:12.5px;font-weight:600;color:var(--g700);background:var(--mint-soft);border:1px solid #CBE7DF;padding:7px 16px;border-radius:999px;white-space:nowrap}
-@media(max-width:600px){.report-tag{display:none}}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0}
+.topbar img{height:38px;width:auto;max-width:180px;object-fit:contain;flex:none;display:block}
+.logo-fallback{font-weight:800;font-size:25px;color:var(--g700);letter-spacing:.02em;flex:none}
+.report-tag{font-size:12.5px;font-weight:600;color:var(--g700);background:var(--mint-soft);border:1px solid #CBE7DF;padding:7px 16px;border-radius:999px;white-space:nowrap;flex:none}
+@media(max-width:600px){.report-tag{display:none}.topbar img{height:32px;max-width:140px}}
 
 /* ---------- hero ---------- */
 .hero{padding:72px 0 0}
@@ -196,7 +196,7 @@ header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:bl
 /* ---------- footer ---------- */
 footer{padding:48px 0 38px;border-top:1px solid var(--line)}
 .f-top{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.f-top img{height:36px}
+.f-top img{height:36px;width:auto;max-width:170px;object-fit:contain;flex:none}
 .f-top .addr{font-size:12.5px;color:var(--muted);text-align:right}
 @media(max-width:560px){.f-top .addr{text-align:left}}
 .method{margin-top:28px;font-size:12px;color:var(--muted);line-height:1.7;border-top:1px dashed var(--line);padding-top:20px}
@@ -423,14 +423,14 @@ footer{padding:48px 0 38px;border-top:1px solid var(--line)}
   <div class="wrap">
     <div class="reveal">
       <div class="eyebrow">Mídia Paga · Meta Ads</div>
-      <h2>Primeiro mês de tráfego pago: <b>resultado positivo</b></h2>
-      <p class="lead">A campanha teve início em junho, com investimento controlado. Um anúncio bem direcionado não gera apenas cliques diretos: ele também leva o paciente a pesquisar a clínica no Google e acessar o site. Por isso, a métrica mais adequada é <b>investimento dividido pelo total de leads do site no mês</b>.</p>
+      <h2>Nova estrutura de captação: <b>primeiro mês de teste</b></h2>
+      <p class="lead">O site passou recentemente por uma nova estrutura de formulário, voltada à captação de leads mais qualificados. Junho foi o primeiro mês em que essa estrutura operou em conjunto com mídia paga, com investimento controlado. Um anúncio bem direcionado não gera apenas cliques diretos: ele também leva o paciente a pesquisar a clínica no Google e acessar o site. Por isso, a métrica mais adequada é <b>investimento dividido pelo total de leads do site no mês</b>.</p>
     </div>
     <div class="pipeline reveal">
       <div class="pstep"><div class="pv">R$ 555,81</div><div class="pl">investidos em junho</div></div>
       <div class="pstep"><div class="pv">75</div><div class="pl">leads do site no mês da campanha</div></div>
       <div class="pstep"><div class="pv">R$ 7,41</div><div class="pl">de investimento por lead do site</div></div>
-      <div class="pstep"><div class="pv">+159%</div><div class="pl">vs maio (29 leads), sem mídia paga</div></div>
+      <div class="pstep"><div class="pv">+159%</div><div class="pl">vs maio (29 leads), sem mídia paga na estrutura nova</div></div>
     </div>
     <div class="meta-notes">
       <div class="panel reveal">
