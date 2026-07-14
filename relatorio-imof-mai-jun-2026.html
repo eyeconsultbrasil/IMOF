@@ -45,17 +45,11 @@ h2{font-size:clamp(22px,3vw,30px);font-weight:600;color:var(--g700);line-height:
 .center{text-align:center}
 .center .lead{margin:0 auto}
 
-/* ---------- header ---------- */
-header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);z-index:50;border-bottom:1px solid var(--line)}
-.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0}
-.topbar img{height:48px;width:auto;flex:none;display:block}
-.logo-fallback{font-weight:800;font-size:25px;color:var(--g700);letter-spacing:.02em;flex:none}
-.report-tag{font-size:12.5px;font-weight:600;color:var(--g700);background:var(--mint-soft);border:1px solid #CBE7DF;padding:7px 16px;border-radius:999px;white-space:nowrap;flex:none}
-@media(max-width:600px){.report-tag{display:none}.topbar img{height:42px}}
-
 /* ---------- hero ---------- */
-.hero{padding:72px 0 0}
-@media(max-width:720px){.hero{padding:48px 0 0}}
+.hero{padding:56px 0 0}
+@media(max-width:720px){.hero{padding:40px 0 0}}
+.hero-logo{height:40px;width:auto;display:block;margin-bottom:28px}
+.logo-fallback{font-weight:800;font-size:24px;color:var(--g700);letter-spacing:.02em;display:block;margin-bottom:28px}
 .hero .lead{margin-top:16px}
 .hero-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
 .pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--g700);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px}
@@ -210,7 +204,6 @@ footer{padding:48px 0 38px;border-top:1px solid var(--line)}
   .fill,.vb .col{transition:none}
 }
 @media print{
-  header{position:static}
   section{padding:30px 0}
   .reveal{opacity:1;transform:none}
   body{font-size:13px}
@@ -219,17 +212,11 @@ footer{padding:48px 0 38px;border-top:1px solid var(--line)}
 </head>
 <body>
 
-<header>
-  <div class="wrap topbar">
-    <img src="https://imof.com.br/wp-content/uploads/2026/04/logo-imof.png" alt="IMOF – Instituto Médico Oftalmológico Foz do Iguaçu" onerror="this.outerHTML='<span class=&quot;logo-fallback&quot;>IMOF</span>'">
-    <span class="report-tag">Relatório de Performance Digital · Mai–Jun 2026</span>
-  </div>
-</header>
-
 <!-- ================= HERO ================= -->
 <section class="hero">
   <div class="wrap">
     <div class="reveal">
+      <img class="hero-logo" src="https://imof.com.br/wp-content/uploads/2026/04/logo-imof.png" alt="IMOF – Instituto Médico Oftalmológico Foz do Iguaçu" onerror="this.outerHTML='<span class=&quot;logo-fallback&quot;>IMOF</span>'">
       <div class="eyebrow">Relatório de Performance · Maio &amp; Junho de 2026</div>
       <h1>O caminho do paciente,<br>da busca ao <b>agendamento</b>.</h1>
       <p class="lead">Este relatório reúne os quatro canais digitais da IMOF em maio e junho, mostrando de forma objetiva onde o paciente encontra a clínica, como inicia o contato e quanto desse contato se converte em agendamento.</p>
