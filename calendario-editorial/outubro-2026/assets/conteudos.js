@@ -1,26 +1,22 @@
 window.IMOF_POSTS = [
   {
-    "id": "V1",
-    "date": "2026-10-12",
-    "title": "Como funciona a cirurgia a laser",
-    "type": "Vídeo",
-    "caption": "Já teve curiosidade de saber como funciona a cirurgia a laser pra correção da visão?\n\nEm poucos minutos, a tecnologia a laser ajusta a curvatura da córnea — cada caso é avaliado individualmente antes de qualquer decisão.\n\nQuer entender como seria no seu caso? Fale com a nossa equipe pelo link da bio.\n\n#cirurgiarefrativa #lasik #oftalmologia #IMOF #FozDoIguaçu",
-    "script": "Você sabe como funciona, de verdade, a cirurgia a laser pra correção da visão? Olá, meu nome é Dr. Renato, e eu vou te mostrar como funciona a cirurgia a laser aqui no IMOF. Em poucos minutos, utilizamos uma tecnologia a laser que ajusta a curvatura da córnea, buscando reduzir a dependência de óculos ou lentes de contato. [corte: imagem ilustrativa do procedimento] Cada olho é diferente — e é na consulta que explicamos tudo com calma. Fale com a nossa equipe para saber mais.",
-    "screen": [
-      "COMO FUNCIONA A CIRURGIA A LASER?",
-      "Conteúdo ilustrativo gerado por IA",
-      "FALE COM A NOSSA EQUIPE"
-    ],
-    "objective": "Abrir o ciclo com uma explicação leve e convidativa — gerar curiosidade, não ensinar tecnicamente. Abre a porta pro contato.",
-    "notice": "avatar de IA + imagem ilustrativa de IA — exibir aviso nos dois momentos",
-    "format": "reel",
-    "pillar": "Educação",
-    "status": "A produzir",
-    "visual": "Avatar de IA do Dr. Renato falando direto pra câmera, cortado com 1 imagem ilustrativa de IA do procedimento a laser."
+    "id": "E1",
+    "date": "2026-10-09",
+    "title": "Dia Mundial da Visão",
+    "type": "Estático · extra",
+    "format": "card",
+    "pillar": "Cuidado contínuo",
+    "status": "Publicado em 09/10 · confirmado pelo usuário",
+    "published": true,
+    "h1": "Seu jeito de ver o mundo importa.",
+    "h2": "Cuidar da sua visão é o que nos move todos os dias.",
+    "caption": "",
+    "image": "assets/2026-10-09_E1_dia-da-visao.png",
+    "visual": "Card de pai e filha fornecido como referência; publicação em 09/10 confirmada pelo usuário."
   },
   {
     "id": "I1",
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "title": "Semana Mundial da Visão",
     "type": "Estático",
     "caption": "Esta semana é a Semana Mundial da Visão.\n\nÉ um bom lembrete: fazer exames oftalmológicos de rotina, periodicamente, é um dos cuidados mais simples que você pode ter com a sua saúde ocular — mesmo sem sintomas.\n\nJá faz tempo que você não faz o seu?\n\n#semanadavisao #saudeocular #oftalmologia #IMOF #FozDoIguaçu",
@@ -30,7 +26,8 @@ window.IMOF_POSTS = [
     "visual": "Arte institucional/branding do IMOF, framing genérico (sem citar data exata, já que o Dia Mundial da Visão — 8/10 — já passou). Foco em \"faça seus exames de rotina\".",
     "h1": "Cuidar da visão deveria fazer parte da sua rotina.",
     "h2": "Mantenha seus exames oftalmológicos em dia, mesmo sem sintomas.",
-    "image": "assets/2026-10-14_I1_final.png"
+    "image": "assets/2026-10-15_I1_final.png",
+    "date_original": "2026-10-14"
   },
   {
     "id": "I2",
@@ -44,30 +41,12 @@ window.IMOF_POSTS = [
     "visual": "Foto real do Dr. Renato (não gerada por IA). Mensagem institucional sóbria — sem autoelogio.",
     "h1": "Cuidar de pessoas é uma escolha diária.",
     "h2": "Neste Dia do Médico, agradecemos a quem dedica sua carreira a cuidar do próximo.",
-    "image": "assets/2026-10-18_I2_final.png"
-  },
-  {
-    "id": "V2",
-    "date": "2026-10-21",
-    "title": "Mitos sobre a cirurgia a laser",
-    "type": "Vídeo",
-    "caption": "\"Deve ser demorado.\" \"A recuperação deve levar meses.\" Será mesmo?\n\nSeparamos alguns dos mitos mais comuns sobre a cirurgia a laser. Cada experiência é diferente — por isso a avaliação individual vem sempre primeiro.\n\nTem uma dúvida que não respondemos aqui? Fale com a nossa equipe pelo link da bio.\n\n#mitoseverdades #cirurgiarefrativa #oftalmologia #IMOF",
-    "script": "Será que a cirurgia a laser é tão demorada quanto parece? Olá, eu sou o Dr. Renato, e vou te contar alguns mitos sobre a cirurgia a laser aqui no IMOF. Um deles é que o procedimento é demorado — na maioria dos casos, não é. Outro é que a recuperação leva meses — também não costuma ser assim. Cada pessoa tem uma experiência diferente. Tem alguma dúvida? Fale com a nossa equipe.",
-    "screen": [
-      "MITOS SOBRE A CIRURGIA A LASER",
-      "Avatar gerado por IA",
-      "TEM DÚVIDA? FALE COM A GENTE"
-    ],
-    "objective": "Leve, curiosidade, desmistifica 2 mitos comuns sem entrar em detalhe técnico.",
-    "notice": "avatar de IA — exibir aviso",
-    "format": "reel",
-    "pillar": "Educação",
-    "status": "A produzir",
-    "visual": "Avatar de IA do Dr. Renato, plano único, sem necessidade de imagem de procedimento."
+    "image": "assets/2026-10-18_I2_final.png",
+    "date_original": "2026-10-18"
   },
   {
     "id": "I3",
-    "date": "2026-10-26",
+    "date": "2026-10-20",
     "title": "Estrutura / equipamento do IMOF",
     "type": "Estático",
     "caption": "Diagnóstico, acompanhamento e cirurgia — tudo no mesmo lugar.\n\nNossa estrutura foi pensada pra acompanhar você do início ao fim do cuidado com a sua visão, com equipamentos próprios pra cada etapa.\n\nQuer conhecer o espaço? Fale com a nossa equipe.\n\n#IMOF #FozDoIguaçu #oftalmologia #institucional",
@@ -77,50 +56,12 @@ window.IMOF_POSTS = [
     "visual": "Foto(s) reais do consultório/equipamento. Fatos específicos na legenda, sem comparação (\"um dos melhores\").",
     "h1": "Todo cuidado que sua visão precisa em um só lugar.",
     "h2": "Diagnóstico, acompanhamento e cirurgia na estrutura do IMOF.",
-    "image": "assets/2026-10-26_I3_final.png"
-  },
-  {
-    "id": "V3",
-    "date": "2026-10-28",
-    "title": "Quem pode fazer, quem não pode",
-    "type": "Vídeo",
-    "caption": "Quem pode fazer cirurgia refrativa?\n\nDe forma geral, três pontos entram na avaliação: grau estável há pelo menos um ano, saúde geral do olho, e idade. Mas só o exame individual confirma o seu caso.\n\nSe você se encaixa nesse perfil, fale com a nossa equipe pelo link da bio.\n\n#cirurgiarefrativa #saudeocular #oftalmologia #IMOF #FozDoIguaçu",
-    "script": "Será que você pode fazer cirurgia refrativa? Olá, meu nome é Dr. Renato, e vou te explicar quem pode fazer cirurgia refrativa aqui no IMOF. De forma geral, avaliamos três pontos: se o grau está estável há pelo menos um ano, a saúde geral do olho, e a idade da pessoa. Mas só o exame individual confirma se alguém é candidato. Se você se encaixa nesse perfil, vale a pena agendar uma avaliação.",
-    "screen": [
-      "QUEM PODE FAZER?",
-      "GRAU ESTÁVEL HÁ 1 ANO+",
-      "SAÚDE OCULAR EM DIA",
-      "Avatar gerado por IA"
-    ],
-    "objective": "Formato \"aula\" — um pouco mais estruturado que os outros, mas ainda curto. Critérios gerais, sem citar técnica específica.",
-    "notice": "avatar de IA — exibir aviso",
-    "format": "reel",
-    "pillar": "Avaliação individual",
-    "status": "A produzir",
-    "visual": "Avatar de IA do Dr. Renato, tom professoral, pode usar 3 cards de texto na tela acompanhando cada critério."
-  },
-  {
-    "id": "V4",
-    "date": "2026-11-02",
-    "title": "A estrutura, contada pelo médico",
-    "type": "Vídeo",
-    "caption": "Um pouco da nossa estrutura aqui no IMOF.\n\nEquipamentos próprios para diagnóstico e acompanhamento, tudo no mesmo lugar — da consulta ao pós-operatório.\n\nQuer conhecer de perto? Fale com a nossa equipe pelo link da bio.\n\n#IMOF #FozDoIguaçu #oftalmologia #institucional",
-    "script": "Já se perguntou como é por dentro de uma clínica oftalmológica completa? Olá, eu sou o Dr. Renato, e quero te mostrar um pouco da nossa estrutura aqui no IMOF. [corte: fotos reais do consultório/equipamentos] Temos equipamentos próprios para diagnóstico e acompanhamento, tudo no mesmo lugar — da consulta ao pós-operatório. Quer conhecer de perto? Fale com a nossa equipe.",
-    "screen": [
-      "CONHEÇA NOSSA ESTRUTURA",
-      "Avatar gerado por IA",
-      "AGENDE UMA VISITA"
-    ],
-    "objective": "Reforça credibilidade institucional com fatos específicos (sem ranking/superlativo).",
-    "notice": "avatar de IA do médico — exibir aviso (as fotos da estrutura são reais, não precisam do aviso)",
-    "format": "reel",
-    "pillar": "Confiança",
-    "status": "A produzir",
-    "visual": "Avatar de IA do Dr. Renato narrando, intercalado com fotos reais da estrutura do IMOF (não geradas por IA)."
+    "image": "assets/2026-10-20_I3_final.png",
+    "date_original": "2026-10-26"
   },
   {
     "id": "I4",
-    "date": "2026-11-04",
+    "date": "2026-10-22",
     "title": "Checklist: você pode fazer cirurgia refrativa?",
     "type": "Estático",
     "caption": "Você pode fazer cirurgia refrativa? Confira esses sinais:\n\n☐ Já pensou em passar por uma consulta com o oftalmologista pra saber se é candidato\n☐ Tem a idade certa pra considerar o procedimento\n☐ Tem coragem de dar o primeiro passo e abandonar o óculos\n☐ Tem vontade de voltar a enxergar o mundo com clareza\n\nSe você se identificou com os pontos acima, pode ser um bom momento pra agendar sua consulta e descobrir se você é candidato.\n\nFale com a nossa equipe pelo link da bio.\n\n#cirurgiarefrativa #saudeocular #oftalmologia #IMOF #FozDoIguaçu",
@@ -136,6 +77,88 @@ window.IMOF_POSTS = [
     "visual": "Foto real do Dr. Renato apontando para o lado, com uma lista de checkboxes (☐) ao lado dele — formato checklist visual. Fecha o ciclo com conversão direta.",
     "h1": "Pensando em fazer cirurgia refrativa?",
     "h2": "O primeiro passo é uma consulta para avaliar se o procedimento é indicado para você.",
-    "image": "assets/2026-11-04_I4_final.png"
+    "image": "assets/2026-10-22_I4_final.png",
+    "date_original": "2026-11-04"
+  },
+  {
+    "id": "V1",
+    "date": "2026-10-27",
+    "title": "Como funciona a cirurgia a laser",
+    "type": "Vídeo",
+    "caption": "Já teve curiosidade de saber como funciona a cirurgia a laser pra correção da visão?\n\nEm poucos minutos, a tecnologia a laser ajusta a curvatura da córnea — cada caso é avaliado individualmente antes de qualquer decisão.\n\nQuer entender como seria no seu caso? Fale com a nossa equipe pelo link da bio.\n\n#cirurgiarefrativa #lasik #oftalmologia #IMOF #FozDoIguaçu",
+    "script": "Você sabe como funciona, de verdade, a cirurgia a laser pra correção da visão? Olá, meu nome é Dr. Renato, e eu vou te mostrar como funciona a cirurgia a laser aqui no IMOF. Em poucos minutos, utilizamos uma tecnologia a laser que ajusta a curvatura da córnea, buscando reduzir a dependência de óculos ou lentes de contato. [corte: imagem ilustrativa do procedimento] Cada olho é diferente — e é na consulta que explicamos tudo com calma. Fale com a nossa equipe para saber mais.",
+    "screen": [
+      "COMO FUNCIONA A CIRURGIA A LASER?",
+      "Conteúdo ilustrativo gerado por IA",
+      "FALE COM A NOSSA EQUIPE"
+    ],
+    "objective": "Abrir o ciclo com uma explicação leve e convidativa — gerar curiosidade, não ensinar tecnicamente. Abre a porta pro contato.",
+    "notice": "avatar de IA + imagem ilustrativa de IA — exibir aviso nos dois momentos",
+    "format": "reel",
+    "pillar": "Educação",
+    "status": "A produzir",
+    "visual": "Avatar de IA do Dr. Renato falando direto pra câmera, cortado com 1 imagem ilustrativa de IA do procedimento a laser.",
+    "date_original": "2026-10-12"
+  },
+  {
+    "id": "V2",
+    "date": "2026-10-29",
+    "title": "Mitos sobre a cirurgia a laser",
+    "type": "Vídeo",
+    "caption": "\"Deve ser demorado.\" \"A recuperação deve levar meses.\" Será mesmo?\n\nSeparamos alguns dos mitos mais comuns sobre a cirurgia a laser. Cada experiência é diferente — por isso a avaliação individual vem sempre primeiro.\n\nTem uma dúvida que não respondemos aqui? Fale com a nossa equipe pelo link da bio.\n\n#mitoseverdades #cirurgiarefrativa #oftalmologia #IMOF",
+    "script": "Será que a cirurgia a laser é tão demorada quanto parece? Olá, eu sou o Dr. Renato, e vou te contar alguns mitos sobre a cirurgia a laser aqui no IMOF. Um deles é que o procedimento é demorado — na maioria dos casos, não é. Outro é que a recuperação leva meses — também não costuma ser assim. Cada pessoa tem uma experiência diferente. Tem alguma dúvida? Fale com a nossa equipe.",
+    "screen": [
+      "MITOS SOBRE A CIRURGIA A LASER",
+      "Avatar gerado por IA",
+      "TEM DÚVIDA? FALE COM A GENTE"
+    ],
+    "objective": "Leve, curiosidade, desmistifica 2 mitos comuns sem entrar em detalhe técnico.",
+    "notice": "avatar de IA — exibir aviso",
+    "format": "reel",
+    "pillar": "Educação",
+    "status": "A produzir",
+    "visual": "Avatar de IA do Dr. Renato, plano único, sem necessidade de imagem de procedimento.",
+    "date_original": "2026-10-21"
+  },
+  {
+    "id": "V3",
+    "date": "2026-11-03",
+    "title": "Quem pode fazer, quem não pode",
+    "type": "Vídeo",
+    "caption": "Quem pode fazer cirurgia refrativa?\n\nDe forma geral, três pontos entram na avaliação: grau estável há pelo menos um ano, saúde geral do olho, e idade. Mas só o exame individual confirma o seu caso.\n\nSe você se encaixa nesse perfil, fale com a nossa equipe pelo link da bio.\n\n#cirurgiarefrativa #saudeocular #oftalmologia #IMOF #FozDoIguaçu",
+    "script": "Será que você pode fazer cirurgia refrativa? Olá, meu nome é Dr. Renato, e vou te explicar quem pode fazer cirurgia refrativa aqui no IMOF. De forma geral, avaliamos três pontos: se o grau está estável há pelo menos um ano, a saúde geral do olho, e a idade da pessoa. Mas só o exame individual confirma se alguém é candidato. Se você se encaixa nesse perfil, vale a pena agendar uma avaliação.",
+    "screen": [
+      "QUEM PODE FAZER?",
+      "GRAU ESTÁVEL HÁ 1 ANO+",
+      "SAÚDE OCULAR EM DIA",
+      "Avatar gerado por IA"
+    ],
+    "objective": "Formato \"aula\" — um pouco mais estruturado que os outros, mas ainda curto. Critérios gerais, sem citar técnica específica.",
+    "notice": "avatar de IA — exibir aviso",
+    "format": "reel",
+    "pillar": "Avaliação individual",
+    "status": "A produzir",
+    "visual": "Avatar de IA do Dr. Renato, tom professoral, pode usar 3 cards de texto na tela acompanhando cada critério.",
+    "date_original": "2026-10-28"
+  },
+  {
+    "id": "V4",
+    "date": "2026-11-05",
+    "title": "A estrutura, contada pelo médico",
+    "type": "Vídeo",
+    "caption": "Um pouco da nossa estrutura aqui no IMOF.\n\nEquipamentos próprios para diagnóstico e acompanhamento, tudo no mesmo lugar — da consulta ao pós-operatório.\n\nQuer conhecer de perto? Fale com a nossa equipe pelo link da bio.\n\n#IMOF #FozDoIguaçu #oftalmologia #institucional",
+    "script": "Já se perguntou como é por dentro de uma clínica oftalmológica completa? Olá, eu sou o Dr. Renato, e quero te mostrar um pouco da nossa estrutura aqui no IMOF. [corte: fotos reais do consultório/equipamentos] Temos equipamentos próprios para diagnóstico e acompanhamento, tudo no mesmo lugar — da consulta ao pós-operatório. Quer conhecer de perto? Fale com a nossa equipe.",
+    "screen": [
+      "CONHEÇA NOSSA ESTRUTURA",
+      "Avatar gerado por IA",
+      "AGENDE UMA VISITA"
+    ],
+    "objective": "Reforça credibilidade institucional com fatos específicos (sem ranking/superlativo).",
+    "notice": "avatar de IA do médico — exibir aviso (as fotos da estrutura são reais, não precisam do aviso)",
+    "format": "reel",
+    "pillar": "Confiança",
+    "status": "A produzir",
+    "visual": "Avatar de IA do Dr. Renato narrando, intercalado com fotos reais da estrutura do IMOF (não geradas por IA).",
+    "date_original": "2026-11-02"
   }
 ];
