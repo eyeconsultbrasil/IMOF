@@ -1,6 +1,6 @@
 'use strict';
 const posts=window.IMOF_POSTS;
-let month='10',format='todos',lastFocus=null,toastTimer;
+let month='all',format='todos',lastFocus=null,toastTimer;
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const months={'10':'Outubro','11':'Novembro',all:'Todo o período'};
