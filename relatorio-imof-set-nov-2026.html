@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMOF · Relatório de Performance Digital — Setembro a Novembro 2026</title>
+<meta name="description" content="Canais digitais da IMOF de 01/09 a 10/11/2026: Google Ads, Meta Ads, site e WhatsApp da recepção.">
+<link rel="icon" href="https://imof.com.br/wp-content/uploads/2026/04/imof-favicon-512-300x300.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --g900:#104E43;--g700:#0F6152;--g600:#17705F;--g500:#1B8E77;--g400:#22A68F;
+  --mint:#6BC4B2;--mint-soft:#E9F5F1;--ink:#2F3B38;--muted:#66756F;--bg:#F6F8F7;
+  --card:#FFFFFF;--line:#E3EBE8;--down:#B35A50;--meta:#3B5BA9;--meta-soft:#EDF1FA;
+  --grad:linear-gradient(100deg,#22A68F 0%,#104E43 100%);
+  --shadow:0 1px 2px rgba(16,78,67,.04),0 14px 34px -20px rgba(16,78,67,.22);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:#fff;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+section{padding:72px 0}
+section.alt{background:var(--bg)}
+@media(max-width:720px){section{padding:52px 0}}
+
+.eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--g400);margin-bottom:12px}
+h1{font-size:clamp(27px,4.2vw,42px);font-weight:600;color:var(--g700);line-height:1.22;letter-spacing:-.01em}
+h1 b,h2 b{font-weight:800}
+h2{font-size:clamp(22px,3vw,30px);font-weight:600;color:var(--g700);line-height:1.3;margin-bottom:10px}
+.lead{color:var(--muted);max-width:680px;font-size:16px}
+.lead b{color:var(--g700);font-weight:600}
+.center{text-align:center}
+
+/* navegação */
+.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:9px;padding-bottom:9px;scrollbar-width:none}
+.nav .wrap::-webkit-scrollbar{display:none}
+.nav a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;padding:6px 13px;border-radius:999px;white-space:nowrap;transition:background .2s,color .2s}
+.nav a:hover,.nav a.on{background:var(--mint-soft);color:var(--g700)}
+
+/* hero */
+.hero{padding:56px 0 0}
+@media(max-width:720px){.hero{padding:40px 0 0}}
+.hero-logo{height:40px;width:auto;display:block;margin-bottom:28px}
+.logo-fallback{font-weight:800;font-size:24px;color:var(--g700);letter-spacing:.02em;display:block;margin-bottom:28px}
+.hero .lead{margin-top:16px}
+.hero-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--g700);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--grad)}
+
+/* filtro de período */
+.filter{display:flex;gap:6px;flex-wrap:wrap;margin-top:40px;align-items:center}
+.filter .fl-l{font-size:12.5px;font-weight:600;color:var(--muted);margin-right:6px;letter-spacing:.04em;text-transform:uppercase}
+.filter button{font:inherit;font-size:13.5px;font-weight:500;color:var(--g700);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 16px;cursor:pointer;transition:all .2s}
+.filter button:hover{border-color:var(--g400)}
+.filter button.on{background:var(--grad);color:#fff;border-color:transparent;box-shadow:var(--shadow)}
+
+.hero-strip{margin-top:16px;background:var(--grad);border-radius:var(--radius);padding:30px 22px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;box-shadow:var(--shadow)}
+.hero-strip .hs{color:#fff;text-align:center;padding:2px 10px;border-right:1px solid rgba(255,255,255,.16)}
+.hero-strip .hs:last-child{border-right:none}
+.hs .n{font-size:clamp(25px,3vw,32px);font-weight:800;line-height:1.1}
+.hs .l{font-size:12.5px;opacity:.92;margin-top:6px;line-height:1.45}
+@media(max-width:860px){.hero-strip{grid-template-columns:repeat(2,1fr);row-gap:24px}.hero-strip .hs:nth-child(2){border-right:none}}
+@media(max-width:440px){.hero-strip{grid-template-columns:1fr}.hero-strip .hs{border-right:none;border-bottom:1px solid rgba(255,255,255,.16);padding-bottom:18px}.hero-strip .hs:last-child{border-bottom:none;padding-bottom:2px}}
+
+/* cards */
+.panel,.mcard,.fcard,.insight,.hl{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.panel{padding:26px}
+.panel h3{font-size:15.5px;font-weight:700;color:var(--g700);margin-bottom:18px}
+.footnote{font-size:12.5px;color:var(--muted);margin-top:18px;line-height:1.6}
+.footnote b{color:var(--g700);font-weight:600}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+@media(max-width:860px){.metrics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:400px){.metrics{grid-template-columns:1fr}}
+.mcard{padding:22px;display:flex;flex-direction:column;gap:2px}
+.mcard .mv{font-size:clamp(24px,2.6vw,31px);font-weight:800;color:var(--g700);line-height:1.15}
+.mcard .ml{font-size:13px;color:var(--muted);line-height:1.5}
+.chip{align-self:flex-start;margin-top:10px;font-size:12px;font-weight:600;border-radius:999px;padding:3px 11px;color:var(--g500);background:var(--mint-soft)}
+.insight{margin-top:22px;padding:22px 26px;display:flex;align-items:flex-start;gap:18px;border-left:4px solid var(--g400)}
+.insight img{width:46px;height:46px;flex:none;margin-top:2px}
+.insight p{font-size:14.5px;color:var(--ink)}
+.insight b{color:var(--g700)}
+@media(max-width:560px){.insight{padding:20px}}
+.two-col{display:grid;grid-template-columns:1.35fr 1fr;gap:18px;margin-top:22px;align-items:stretch}
+.two-col.even{grid-template-columns:1fr 1fr}
+@media(max-width:860px){.two-col,.two-col.even{grid-template-columns:1fr}}
+.track{height:8px;background:var(--mint-soft);border-radius:999px;overflow:hidden}
+.fill{height:100%;background:var(--grad);border-radius:999px;width:0;transition:width 1s cubic-bezier(.2,.7,.2,1)}
+.fill.meta{background:linear-gradient(100deg,#6C86C9,#3B5BA9)}
+.hbar{margin-bottom:14px}
+.hbar:last-of-type{margin-bottom:0}
+.hbar .ht{display:flex;justify-content:space-between;gap:12px;font-size:13px;margin-bottom:5px}
+.hbar .ht span:first-child{min-width:0}
+.hbar .ht span:last-child{font-weight:700;color:var(--ink);white-space:nowrap}
+.tagline{display:inline-flex;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g400);background:var(--mint-soft);border-radius:999px;padding:4px 13px;margin-bottom:12px}
+
+/* barras verticais */
+.vbars{display:flex;align-items:flex-end;justify-content:space-around;gap:14px;height:210px;margin-top:6px}
+.vb{display:flex;flex-direction:column;align-items:center;gap:7px;height:100%;justify-content:flex-end;flex:1;max-width:80px}
+.vb .stack{width:100%;max-width:58px;display:flex;flex-direction:column-reverse;height:0;transition:height 1s cubic-bezier(.2,.7,.2,1);border-radius:8px 8px 0 0;overflow:hidden}
+.vb .seg{width:100%}
+.vb .num{font-size:19px;font-weight:800;color:var(--ink)}
+.vb .lab{font-size:12.5px;color:var(--muted);text-align:center;line-height:1.3}
+.vb.dim{opacity:.35}
+.legend{font-size:13px;display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px;justify-content:center}
+.legend span{display:flex;align-items:center;gap:7px}
+.legend i{width:11px;height:11px;border-radius:3px;flex:none}
+
+/* pipeline meta */
+.pipeline{display:grid;grid-template-columns:repeat(4,1fr);margin-top:40px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.pstep{padding:26px 18px;text-align:center}
+.pstep+.pstep{border-left:1px solid var(--line)}
+.pstep .pv{font-size:clamp(22px,2.4vw,26px);font-weight:800;color:var(--g700);line-height:1.15}
+.pstep .pl{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.45}
+@media(max-width:860px){.pipeline{grid-template-columns:1fr 1fr}.pstep:nth-child(3){border-left:none}.pstep:nth-child(n+3){border-top:1px solid var(--line)}}
+@media(max-width:400px){.pipeline{grid-template-columns:1fr}.pstep+.pstep{border-left:none;border-top:1px solid var(--line)}}
+
+/* funil */
+.funnel-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:22px;margin-top:30px;align-items:start}
+@media(max-width:860px){.funnel-grid{grid-template-columns:1fr}}
+.funnel{display:flex;flex-direction:column;align-items:center}
+.fstage{width:100%;display:flex;flex-direction:column;align-items:center}
+.fbar{background:var(--grad);color:#fff;border-radius:14px;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:14px;box-shadow:var(--shadow);transition:width 1s cubic-bezier(.2,.7,.2,1);width:40%;min-width:min(100%,290px);max-width:100%}
+.fbar .fl{font-size:13.5px;font-weight:500;line-height:1.35}
+.fbar .fl small{display:block;opacity:.85;font-weight:400;font-size:11.5px}
+.fbar .fn{font-size:24px;font-weight:800;line-height:1;white-space:nowrap}
+.fbar.lite{background:linear-gradient(100deg,#6BC4B2,#22A68F)}
+.fbar.ghost{background:#fff;color:var(--g700);border:2px dashed var(--mint);box-shadow:none}
+.fbar.ghost .fn{color:var(--mint)}
+.fconn{padding:6px 0;text-align:center}
+.fconn span{font-size:12px;font-weight:600;color:var(--g500);background:var(--mint-soft);border-radius:999px;padding:3px 13px}
+.fbranch{font-size:12px;color:var(--muted);text-align:center;margin-top:6px}
+.fbranch b{color:var(--g700)}
+.divider{width:100%;display:flex;align-items:center;gap:12px;margin:18px 0 8px;font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--g400)}
+.divider:before,.divider:after{content:"";flex:1;border-top:1px dashed var(--mint)}
+.fcard{padding:26px}
+.fcard h3{font-size:16px;font-weight:700;color:var(--g700);margin-bottom:14px}
+.fcard p{font-size:14px;color:var(--muted)}
+.fcard p b{color:var(--g700)}
+.big-rate{display:flex;gap:26px;margin:4px 0 16px;flex-wrap:wrap}
+.big-rate div strong{display:block;font-size:30px;font-weight:800;color:var(--g400);line-height:1.15}
+.big-rate div span{font-size:12px;color:var(--muted);line-height:1.45;display:block;margin-top:2px}
+.mix{display:flex;height:14px;border-radius:999px;overflow:hidden;margin:14px 0 10px}
+.mix div{height:100%;transition:width 1s cubic-bezier(.2,.7,.2,1);width:0}
+
+/* donut */
+.donut-wrap{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.donut{width:160px;height:160px;border-radius:50%;background:conic-gradient(var(--g900) 0 58.8%,var(--g600) 58.8% 79.5%,var(--g400) 79.5% 97.6%,var(--mint) 97.6% 100%);position:relative;flex:none;margin:0 auto}
+.donut::after{content:'80%\A celular';white-space:pre;position:absolute;inset:30px;background:var(--card);border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font-size:14.5px;font-weight:700;color:var(--g700);line-height:1.3}
+.dlegend{font-size:13px;display:flex;flex-direction:column;gap:8px;margin:0 auto}
+.dlegend li{list-style:none;display:flex;align-items:center;gap:9px}
+.dlegend i{width:11px;height:11px;border-radius:3px;flex:none}
+.dlegend b{color:var(--ink);min-width:44px;text-align:right}
+.delta{align-self:flex-start;margin-top:10px;font-size:12px;font-weight:600;border-radius:999px;padding:3px 11px;color:var(--muted);background:var(--bg)}
+
+/* tabela */
+.table-wrap{overflow-x:auto;margin-top:6px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px}
+th,td{padding:11px 12px;text-align:right;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+th{font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+tbody tr{transition:background .2s}
+tbody tr:hover{background:var(--mint-soft)}
+tr.total td{font-weight:700;color:var(--g700);border-bottom:none}
+td .pct{display:inline-block;min-width:44px;font-size:12px;font-weight:600;color:var(--g500)}
+
+/* destaques */
+.hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+@media(max-width:860px){.hl-grid{grid-template-columns:1fr}}
+.hl{padding:28px}
+.hl .ico{width:44px;height:44px;border-radius:13px;background:var(--mint-soft);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.hl .ico svg{width:22px;height:22px;stroke:var(--g500);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.hl h3{font-size:16px;font-weight:700;color:var(--g700);margin-bottom:6px}
+.hl p{font-size:14px;color:var(--muted)}
+.hl p b{color:var(--g700)}
+.steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:12px;margin-top:6px}
+.steps li{counter-increment:s;display:flex;gap:12px;font-size:14px;color:var(--ink)}
+.steps li:before{content:counter(s);flex:none;width:26px;height:26px;border-radius:50%;background:var(--mint-soft);color:var(--g700);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.pending{display:inline-flex;font-size:12px;font-weight:600;color:#8A6A1F;background:#FBF3DF;border-radius:999px;padding:3px 11px}
+
+footer{padding:48px 0 38px;border-top:1px solid var(--line)}
+.f-top{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.f-top img{height:44px;width:auto;flex:none}
+.f-top .addr{font-size:12.5px;color:var(--muted);text-align:right}
+@media(max-width:560px){.f-top .addr{text-align:left}}
+.method{margin-top:28px;font-size:12px;color:var(--muted);line-height:1.7;border-top:1px dashed var(--line);padding-top:20px}
+.method b{color:var(--g700);font-weight:600}
+.method p+p{margin-top:8px}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.fill,.vb .stack,.fbar,.mix div{transition:none}}
+@media print{.nav,.filter{display:none}section{padding:30px 0}.reveal{opacity:1;transform:none}body{font-size:13px}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Seções">
+  <div class="wrap">
+    <a href="#topo">Resumo</a>
+    <a href="#google">Google Ads</a>
+    <a href="#meta">Meta Ads</a>
+    <a href="#gmn">Google Meu Negócio</a>
+    <a href="#funil">Canais digitais</a>
+    <a href="#cruzamento">Site × recepção</a>
+    <a href="#lista">Lista para conferência</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="topo">
+  <div class="wrap">
+    <div class="reveal">
+      <img class="hero-logo" src="https://imof.com.br/wp-content/uploads/2026/04/logo-imof.png" alt="IMOF – Instituto Médico Oftalmológico Foz do Iguaçu" onerror="this.outerHTML='<span class=&quot;logo-fallback&quot;>IMOF</span>'">
+      <div class="eyebrow">Relatório de Performance · 01/09 a 10/11/2026</div>
+      <h1>Canais digitais trazendo<br><b>mais pacientes</b> todos os dias.</h1>
+      <p class="lead">Este relatório reúne Google Ads, Meta Ads, o formulário do site e o WhatsApp da recepção. O número que mais importa aqui é o de <b>pessoas que pediram contato com nome e telefone</b>: é ele que permite acompanhar cada paciente até a recepção e, na próxima etapa, até o procedimento.</p>
+      <div class="hero-meta">
+        <span class="pill"><span class="dot"></span>Google Ads</span>
+        <span class="pill"><span class="dot"></span>Meta Ads</span>
+        <span class="pill"><span class="dot"></span>Google Meu Negócio</span>
+        <span class="pill"><span class="dot"></span>Site imof.com.br</span>
+        <span class="pill"><span class="dot"></span>WhatsApp Oficial</span>
+      </div>
+    </div>
+    <div class="filter reveal" role="group" aria-label="Período">
+      <span class="fl-l">Período</span>
+      <button data-p="all" class="on">Todo o período</button>
+      <button data-p="0">Setembro</button>
+      <button data-p="1">Outubro</button>
+      <button data-p="2">Novembro (1–10)</button>
+    </div>
+    <div class="hero-strip reveal">
+      <div class="hs"><div class="n" id="h-leads">0</div><div class="l">leads dos canais digitais<br><span id="h-leads-s">pessoas únicas</span></div></div>
+      <div class="hs"><div class="n" id="h-inv">R$ 0</div><div class="l">investidos em mídia<br>Google + Meta</div></div>
+      <div class="hs"><div class="n" id="h-cpl">R$ 0</div><div class="l">por lead</div></div>
+      <div class="hs"><div class="n" id="h-conv">0%</div><div class="l" id="h-conv-l">dos pedidos pelo site<br>conversaram com a recepção</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GOOGLE ================= -->
+<section id="google">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Google Ads · 01/09 a 10/11</div>
+      <h2>Quem procura oftalmologista <b>encontra a IMOF</b></h2>
+      <p class="lead">Duas campanhas no ar: Pesquisa, para quem digita no Google, e Local, que aparece no Maps e no perfil da clínica. Cada contato é um clique no WhatsApp pelo site ou uma ligação direto do anúncio.</p>
+    </div>
+    <div class="metrics reveal">
+      <div class="mcard"><span class="mv" data-count="3383.74" data-fmt="brl">R$ 0</span><span class="ml">investidos</span></div>
+      <div class="mcard"><span class="mv" data-count="34010">0</span><span class="ml">vezes que os anúncios apareceram</span></div>
+      <div class="mcard"><span class="mv" data-count="3088">0</span><span class="ml">cliques nos anúncios</span><span class="chip">9,1% de quem viu clicou</span></div>
+      <div class="mcard"><span class="mv" data-count="404">0</span><span class="ml">contatos gerados<br>305 pelo WhatsApp · 99 ligações</span></div>
+      <div class="mcard"><span class="mv" data-count="8.38" data-fmt="brl2">R$ 0</span><span class="ml">por contato</span></div>
+      <div class="mcard"><span class="mv" data-count="350">0</span><span class="ml">contatos só da campanha de Pesquisa<br>a R$ 7,88 cada</span></div>
+    </div>
+    <div class="two-col">
+      <div class="panel reveal center">
+        <h3>Contatos por mês</h3>
+        <div class="vbars" id="g-bars"></div>
+        <div class="legend"><span><i style="background:var(--g700)"></i>WhatsApp pelo site</span><span><i style="background:var(--mint)"></i>Ligação pelo anúncio</span></div>
+      </div>
+      <div class="panel reveal">
+        <h3>As duas campanhas</h3>
+        <div class="hbar"><div class="ht"><span>Pesquisa · Foz do Iguaçu<br><small style="color:var(--muted)">R$ 2.754,89 · 2.183 cliques</small></span><span>350 contatos</span></div><div class="track"><div class="fill" data-w="100%"></div></div></div>
+        <div class="hbar" style="margin-top:18px"><div class="ht"><span>Local · Maps e perfil<br><small style="color:var(--muted)">R$ 628,84 · 905 cliques</small></span><span>54 contatos</span></div><div class="track"><div class="fill" data-w="15.5%"></div></div></div>
+        <p class="footnote">A <b>Pesquisa responde por 87% dos contatos</b>. A campanha Local teve um novembro mais fraco (4 contatos até o dia 10) e está em acompanhamento.</p>
+      </div>
+    </div>
+    <div class="insight reveal">
+      <img src="https://imof.com.br/wp-content/uploads/2026/04/imof-isotipo-cta.svg" alt="" onerror="this.style.display='none'">
+      <p><b>Outubro: R$ 6,99 por contato, 25% mais barato que setembro.</b> Com a campanha ajustada, o Google trouxe mais contatos (177) gastando menos que no mês anterior. Foi <b>o melhor mês do período</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= META ================= -->
+<section class="alt" id="meta">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Meta Ads · Instagram e Facebook</div>
+      <h2>O Dr. Alexandre <b>abre a conversa</b></h2>
+      <p class="lead">Nos vídeos, o Dr. Alexandre explica de forma simples temas como cirurgia refrativa e presbiopia. Quem se identifica com o assunto toca no botão e já fala com a recepção pelo WhatsApp para tirar dúvidas e marcar a consulta.</p>
+    </div>
+    <div class="pipeline reveal">
+      <div class="pstep"><div class="pv" data-count="1810.71" data-fmt="brl">R$ 0</div><div class="pl">investidos</div></div>
+      <div class="pstep"><div class="pv" data-count="70224">0</div><div class="pl">vezes que os anúncios apareceram</div></div>
+      <div class="pstep"><div class="pv" data-count="440">0</div><div class="pl">cliques nos anúncios</div></div>
+      <div class="pstep"><div class="pv" data-count="156">0</div><div class="pl">conversas iniciadas no WhatsApp</div></div>
+    </div>
+    <div class="two-col" style="grid-template-columns:1fr">
+      <div class="panel reveal center">
+        <h3>Conversas por mês</h3>
+        <div class="vbars" id="m-bars"></div>
+        <p class="footnote">Outubro foi o melhor mês: <b>93 conversas</b>, a R$ 10,63 cada, quase o triplo de setembro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GOOGLE MEU NEGÓCIO ================= -->
+<section id="gmn">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Google Meu Negócio · setembro e outubro</div>
+      <h2>O perfil da IMOF no Google <b>leva o paciente até a porta</b></h2>
+      <p class="lead">O perfil aparece no Google e no Maps para quem procura oftalmologista em Foz do Iguaçu. Daqui o paciente liga, chama no WhatsApp ou traça a rota até a clínica, sem passar por anúncio.</p>
+    </div>
+    <div class="metrics reveal">
+      <div class="mcard"><span class="mv" data-count="6056">0</span><span class="ml">pessoas visualizaram o perfil</span><span class="delta">−16% vs set–out/2025</span></div>
+      <div class="mcard"><span class="mv" data-count="1071">0</span><span class="ml">rotas traçadas até a clínica<br>554 em set · 517 em out</span><span class="delta">−16% vs set–out/2025</span></div>
+      <div class="mcard"><span class="mv" data-count="594">0</span><span class="ml">contatos diretos pelo perfil<br>332 cliques no chat · 262 ligações</span></div>
+      <div class="mcard"><span class="mv" data-count="332">0</span><span class="ml">cliques no chat (vai direto ao WhatsApp)<br>172 em set · 160 em out</span><span class="delta">−47% vs set–out/2025</span></div>
+      <div class="mcard"><span class="mv" data-count="262">0</span><span class="ml">ligações pelo perfil<br>122 em set · 140 em out</span><span class="delta">−78% vs set–out/2025</span></div>
+      <div class="mcard"><span class="mv" data-count="1750">0</span><span class="ml">interações totais no perfil</span><span class="delta">−46% vs set–out/2025</span></div>
+    </div>
+    <div class="insight reveal">
+      <img src="https://imof.com.br/wp-content/uploads/2026/04/imof-isotipo-cta.svg" alt="" onerror="this.style.display='none'">
+      <p><b>Mais de mil pacientes traçaram a rota até a IMOF em dois meses.</b> Somando rotas, chat e ligações, o perfil gerou <b>1.665 ações de pessoas indo ou falando com a clínica</b>. A procura pelo perfil foi menor que em 2025, e é aqui que os anúncios do Google complementam: no mesmo período, o Google Ads trouxe <b>347 contatos</b>.</p>
+    </div>
+    <div class="two-col">
+      <div class="panel reveal">
+        <h3>O que o paciente digita para encontrar a clínica</h3>
+        <div class="hbar"><div class="ht"><span>oftalmologista foz do iguaçu</span><span>551</span></div><div class="track"><div class="fill" data-w="100%"></div></div></div>
+        <div class="hbar"><div class="ht"><span>imof – instituto médico oftalmológico</span><span>295</span></div><div class="track"><div class="fill" data-w="54%"></div></div></div>
+        <div class="hbar"><div class="ht"><span>oftalmologista</span><span>231</span></div><div class="track"><div class="fill" data-w="42%"></div></div></div>
+        <div class="hbar"><div class="ht"><span>oftalmologista em foz do iguaçu</span><span>104</span></div><div class="track"><div class="fill" data-w="19%"></div></div></div>
+        <div class="hbar"><div class="ht"><span>imof</span><span>98</span></div><div class="track"><div class="fill" data-w="18%"></div></div></div>
+        <p class="footnote">A IMOF aparece na busca mais importante da cidade, <b>"oftalmologista foz do iguaçu"</b>. E <b>393 pessoas buscaram a clínica pelo nome</b>: a marca já é procurada diretamente.</p>
+      </div>
+      <div class="panel reveal">
+        <h3>Por onde o perfil é descoberto</h3>
+        <div class="donut-wrap">
+          <div class="donut" role="img" aria-label="80% das descobertas acontecem no celular"></div>
+          <ul class="dlegend">
+            <li><i style="background:var(--g900)"></i><b>3.559</b>&nbsp;Pesquisa Google · celular</li>
+            <li><i style="background:var(--g600)"></i><b>1.254</b>&nbsp;Google Maps · celular</li>
+            <li><i style="background:var(--g400)"></i><b>1.096</b>&nbsp;Pesquisa Google · computador</li>
+            <li><i style="background:var(--mint)"></i><b>147</b>&nbsp;Google Maps · computador</li>
+          </ul>
+        </div>
+        <p class="footnote"><b>8 em cada 10</b> pessoas encontram a IMOF pelo celular.</p>
+      </div>
+    </div>
+    <p class="footnote reveal">Dados do painel de desempenho do Perfil da Empresa, setembro e outubro de 2026. Os contatos do perfil não entram na soma de leads, porque não trazem telefone para identificar a pessoa.</p>
+  </div>
+</section>
+
+<!-- ================= FUNIL ================= -->
+<section class="alt" id="funil">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Canais digitais juntos</div>
+      <h2>Do anúncio até a <b>fila de agendamento</b></h2>
+      <p class="lead">Google e Meta somados, contando cada pessoa uma vez só. Use o filtro de período no topo para ver mês a mês. Período de 01/09 a 10/11. Abaixo da linha tracejada fica o que a recepção vai confirmar: quem agendou, compareceu e fez procedimento.</p>
+    </div>
+    <div class="funnel-grid">
+      <div class="funnel reveal" id="funnel">
+        <div class="fstage"><div class="fbar" data-fw="100"><span class="fl">Anúncios vistos<small>Google + Meta</small></span><span class="fn" id="f-impr">0</span></div></div>
+        <div class="fconn"><span>↓</span></div>
+        <div class="fstage"><div class="fbar" data-fw="86"><span class="fl">Cliques<small>Google + Meta</small></span><span class="fn" id="f-click">0</span></div></div>
+        <div class="fconn"><span>↓</span></div>
+        <div class="fstage"><div class="fbar" data-fw="72"><span class="fl">Leads dos canais digitais<small>pessoas únicas</small></span><span class="fn" id="f-leads">0</span></div>
+          <div class="fbranch" id="f-branch"></div></div>
+        <div class="fconn"><span id="f-c1">↓</span></div>
+        <div class="fstage"><div class="fbar lite" data-fw="58"><span class="fl">Conversaram com a recepção<small>pedidos pelo site</small></span><span class="fn" id="f-conv">0</span></div></div>
+        <div class="fconn"><span id="f-c2">↓</span></div>
+        <div class="fstage"><div class="fbar lite" data-fw="46"><span class="fl">Fila de agendamento<small>no WhatsApp da clínica</small></span><span class="fn" id="f-ag">0</span></div></div>
+        <div class="divider">conferência da recepção</div>
+        <div class="fstage"><div class="fbar ghost" data-fw="36"><span class="fl">Agendaram consulta</span><span class="fn">em breve</span></div></div>
+        <div class="fconn"><span>↓</span></div>
+        <div class="fstage"><div class="fbar ghost" data-fw="28"><span class="fl">Compareceram</span><span class="fn">em breve</span></div></div>
+        <div class="fconn"><span>↓</span></div>
+        <div class="fstage"><div class="fbar ghost" data-fw="22"><span class="fl">Fizeram procedimento</span><span class="fn">em breve</span></div></div>
+      </div>
+      <div class="fcard reveal">
+        <h3>De onde vêm os leads</h3>
+        <div class="mix" id="mix"><div style="background:var(--g700)"></div><div style="background:var(--meta)"></div><div style="background:var(--mint)"></div></div>
+        <div class="hbar"><div class="ht"><span><i style="display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--g700);margin-right:7px"></i>Leads do site (Google + Meta)</span><span id="mx-site">0</span></div></div>
+        <div class="hbar"><div class="ht"><span><i style="display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--meta);margin-right:7px"></i>Conversas no WhatsApp pelo Meta</span><span id="mx-meta">0</span></div></div>
+        <div class="hbar"><div class="ht"><span><i style="display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--mint);margin-right:7px"></i>Ligações pelo anúncio do Google</span><span id="mx-call">0</span></div></div>
+        <div class="big-rate" style="margin-top:22px">
+          <div><strong id="r-conv">0%</strong><span>dos pedidos pelo site<br>conversaram com a recepção</span></div>
+          <div><strong id="r-ag">0%</strong><span>chegaram à fila<br>de agendamento</span></div>
+        </div>
+        <p id="f-read">A cada 10 pessoas que pedem contato pelo site, 8 conversam com a recepção e 6 chegam à fila de agendamento.</p>
+        <p class="footnote">As etapas de conversa e agendamento usam os pedidos pelo site, os únicos com telefone para localizar na recepção. O clique no WhatsApp do Google é o próprio envio do formulário: por isso não entra duas vezes.</p>
+      </div>
+    </div>
+    <div class="panel reveal" style="margin-top:22px">
+      <h3>Leads e investimento mês a mês</h3>
+      <div class="vbars" id="l-bars" style="height:230px"></div>
+      <div class="legend"><span><i style="background:var(--g700)"></i>Leads do site (Google + Meta)</span><span><i style="background:var(--meta)"></i>WhatsApp pelo Meta</span><span><i style="background:var(--mint)"></i>Ligações pelo Google</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CRUZAMENTO ================= -->
+<section id="cruzamento">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Cruzamento · site × recepção</div>
+      <h2>Cada pedido foi procurado <b>na recepção</b></h2>
+      <p class="lead">O telefone de cada pessoa que preencheu o formulário foi localizado no relatório de atendimentos do WhatsApp Imof Oficial. Assim dá para ver quem de fato conversou com a clínica e quem foi encaminhado para agendar.</p>
+    </div>
+    <div class="panel reveal" style="margin-top:40px">
+      <h3>Pedidos pelo site e o que aconteceu na recepção</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Mês</th><th>Pessoas</th><th>Conversaram</th><th>Fila de agendamento</th><th>Pediram cirurgia</th></tr></thead>
+          <tbody>
+                        <tr><td>Setembro</td><td>166</td><td>126 <span class="pct">76%</span></td><td>96 <span class="pct">58%</span></td><td>15</td></tr>
+            <tr><td>Outubro</td><td>174</td><td>146 <span class="pct">84%</span></td><td>125 <span class="pct">72%</span></td><td>8</td></tr>
+            <tr><td>Novembro (1–10)</td><td>57</td><td colspan="2" style="text-align:center"><span class="pending">aguardando exportação da recepção</span></td><td>4</td></tr>
+            <tr class="total"><td>Total</td><td>397</td><td>272 <span class="pct">80%</span></td><td>221 <span class="pct">65%</span></td><td>27</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="footnote">Percentuais sobre os 340 pedidos até 31/10. <b>Outubro teve o melhor aproveitamento:</b> 84% conversaram e 72% chegaram à fila de agendamento.</p>
+    </div>
+    <div class="two-col even">
+      <div class="panel reveal">
+        <h3>O que o paciente pediu no formulário</h3>
+        <div class="hbar"><div class="ht"><span>Quero agendar uma avaliação</span><span>175</span></div><div class="track"><div class="fill" data-w="100%"></div></div></div>
+        <div class="hbar"><div class="ht"><span>Preciso de exames oftalmológicos</span><span>128</span></div><div class="track"><div class="fill" data-w="73%"></div></div></div>
+        <div class="hbar"><div class="ht"><span>Outro assunto</span><span>41</span></div><div class="track"><div class="fill" data-w="23%"></div></div></div>
+        <div class="hbar"><div class="ht"><span>Tenho interesse em uma cirurgia</span><span>27</span></div><div class="track"><div class="fill" data-w="15%"></div></div></div>
+        <div class="hbar"><div class="ht"><span>Quero saber sobre convênios</span><span>26</span></div><div class="track"><div class="fill" data-w="15%"></div></div></div>
+        <p class="footnote"><b>3 em cada 4 pedidos</b> já chegam querendo avaliação ou exame: intenção clara de vir à clínica.</p>
+      </div>
+      <div class="panel reveal center">
+        <h3>Leads do site que chegaram à fila de agendamento</h3>
+        <div class="vbars" id="r-bars"></div>
+        <p class="footnote">De setembro para outubro, <b>30% mais leads do site</b> chegaram à fila de agendamento (96 → 125), com aproveitamento subindo de 58% para 72%.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LISTA PARA CONFERÊNCIA ================= -->
+<section class="alt" id="lista">
+  <div class="wrap">
+    <div class="panel reveal center" style="max-width:640px;margin:0 auto;padding:44px 32px">
+      <div class="ico" style="width:56px;height:56px;border-radius:16px;background:var(--mint-soft);display:flex;align-items:center;justify-content:center;margin:0 auto 18px"><svg viewBox="0 0 24 24" style="width:26px;height:26px;stroke:var(--g500);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg></div>
+      <div class="eyebrow">Conferência da recepção</div>
+      <h2>Lista de pacientes dos <b>canais digitais</b></h2>
+      <p class="lead" style="margin:0 auto">Nome e contato das <b>397 pessoas</b> que pediram contato pelo site de 01/09 a 10/11. Quem pediu cirurgia vem primeiro. Marque quem agendou, compareceu, teve indicação cirúrgica e fez o procedimento.</p>
+      <form id="dl-form" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px" autocomplete="off">
+        <input id="dl-pass" type="password" placeholder="Senha" aria-label="Senha" required style="font:inherit;font-size:15px;padding:13px 20px;border:1px solid var(--line);border-radius:999px;min-width:200px;outline-color:var(--g400)">
+        <button type="submit" id="dl-btn" style="font:inherit;display:inline-flex;align-items:center;gap:10px;background:var(--grad);color:#fff;border:0;cursor:pointer;font-weight:600;font-size:15px;padding:14px 28px;border-radius:999px;box-shadow:var(--shadow)">Baixar planilha (.xlsx)</button>
+      </form>
+      <p id="dl-msg" style="font-size:13px;margin-top:12px;min-height:20px;color:var(--muted)"></p>
+      <p class="footnote" style="margin-top:6px">Arquivo protegido por senha, com dados pessoais de pacientes. Uso restrito à equipe da IMOF.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <img src="https://imof.com.br/wp-content/uploads/2026/04/logo-imof.png" alt="IMOF" onerror="this.outerHTML='<span class=&quot;logo-fallback&quot; style=&quot;margin:0&quot;>IMOF</span>'">
+      <div class="addr">IMOF · Instituto Médico Oftalmológico · Foz do Iguaçu<br>Relatório preparado pela Eye Consult · dados até 10/11/2026</div>
+    </div>
+    <div class="method">
+      <p><b>Fontes.</b> Google Ads (conta 406-956-9113, conversões principais: clique no WhatsApp e ligação). Google Meu Negócio (painel de desempenho, set–out). Meta Ads (conta IMOF ATUAL; conversas iniciadas por mensagem em até 7 dias após o clique). Formulário do site imof.com.br (Elementor). Relatório de atendimentos do WhatsApp Imof Oficial, de 01/09 a 31/10. Período do relatório: 01/09 a 10/11/2026.</p>
+      <p><b>Leads dos canais digitais</b> = pessoas únicas que pediram contato pelo site, tratadas como leads do site vindos de Google e Meta (por telefone, excluídos testes e números inválidos; cerca de 1 em cada 4 chegou sem marcação de campanha) + conversas iniciadas pelo Meta + ligações pelo anúncio do Google. O clique no WhatsApp do Google dispara no envio do formulário e não é somado de novo. Conversas do Meta e ligações são contadas como as plataformas informam, sem telefone para deduplicar.</p>
+      <p><b>Cruzamento.</b> Telefone do formulário localizado no WhatsApp da recepção em data igual ou posterior ao envio. Investimento de novembro e dados de 10/11 são parciais.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var M=['Set','Out','Nov*'];
+  var D={
+    gInv:[1594.07,1237.19,552.48], mInv:[419.73,989.03,401.95],
+    gImp:[16338,12222,5450], mImp:[13404,38060,18760],
+    gClk:[1439,1119,530], mClk:[78,204,158],
+    gWa:[125,137,43], gCall:[45,40,14], mConv:[33,93,30],
+    site:[166,174,57], base:[166,174,0], conv:[126,146,null], ag:[96,125,null],
+    siteAll:397, baseAll:340, convAll:272, agAll:221,
+    recep:{lab:['Set','Out'],v:[96,125]}
+  };
+  var sum=function(a){return a.reduce(function(x,y){return x+(y||0)},0)};
+  var nf=new Intl.NumberFormat('pt-BR');
+  var brl=function(v,d){return 'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:d,maximumFractionDigits:d})};
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function animate(el,to,fmt,suffix){
+    var from=parseFloat(el.dataset.cur||0); el.dataset.cur=to;
+    var out=function(v){
+      if(fmt==='brl') return brl(v,0);
+      if(fmt==='brl2') return brl(v,2);
+      if(fmt==='pct') return Math.round(v)+'%';
+      return nf.format(Math.round(v));
+    };
+    if(reduce){el.textContent=out(to);return}
+    var t0=null,dur=900;
+    function step(t){ if(!t0)t0=t; var p=Math.min((t-t0)/dur,1); var e=1-Math.pow(1-p,3);
+      el.textContent=out(from+(to-from)*e); if(p<1)requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+
+  function pick(arr,p){return p==='all'?sum(arr):(arr[p]||0)}
+
+  function render(p){
+    var site=p==='all'?D.siteAll:D.site[p];
+    var meta=pick(D.mConv,p), call=pick(D.gCall,p);
+    var leads=site+meta+call, inv=pick(D.gInv,p)+pick(D.mInv,p);
+    var base=p==='all'?D.baseAll:D.base[p];
+    var conv=p==='all'?D.convAll:D.conv[p], ag=p==='all'?D.agAll:D.ag[p];
+    animate(document.getElementById('h-leads'),leads);
+    animate(document.getElementById('h-inv'),inv,'brl');
+    animate(document.getElementById('h-cpl'),inv/leads,'brl2');
+    var hc=document.getElementById('h-conv'), hl=document.getElementById('h-conv-l');
+    if(conv==null){hc.textContent='—';hc.dataset.cur=0;hl.innerHTML='conversa com a recepção<br>aguardando dados de novembro'}
+    else{animate(hc,conv/base*100,'pct');hl.innerHTML='dos pedidos pelo site<br>conversaram com a recepção'}
+    document.getElementById('h-leads-s').textContent=p==='all'?'pessoas únicas · 01/09 a 10/11':'pessoas únicas no mês';
+    // funil
+    animate(document.getElementById('f-impr'),pick(D.gImp,p)+pick(D.mImp,p));
+    animate(document.getElementById('f-click'),pick(D.gClk,p)+pick(D.mClk,p));
+    animate(document.getElementById('f-leads'),leads);
+    document.getElementById('f-branch').innerHTML='<b>'+nf.format(site)+'</b> leads do site · <b>'+meta+'</b> WhatsApp pelo Meta · <b>'+call+'</b> ligações pelo Google';
+    var fc=document.getElementById('f-conv'), fa=document.getElementById('f-ag');
+    if(conv==null){fc.textContent='—';fa.textContent='—';fc.dataset.cur=0;fa.dataset.cur=0;
+      document.getElementById('f-c1').textContent='↓ aguardando dados de novembro';document.getElementById('f-c2').textContent='↓';
+      document.getElementById('r-conv').textContent='—';document.getElementById('r-ag').textContent='—';
+      document.getElementById('f-read').textContent='Os atendimentos de 01 a 10/11 ainda não foram exportados pela recepção. Assim que chegarem, este mês entra no cruzamento.';
+    } else {
+      animate(fc,conv);animate(fa,ag);
+      var pc=Math.round(conv/base*100), pa=Math.round(ag/base*100);
+      document.getElementById('f-c1').textContent='↓ '+pc+'% dos pedidos pelo site'+(p==='all'?' (até 31/10)':'');
+      document.getElementById('f-c2').textContent='↓ '+pa+'% chegam à fila';
+      animate(document.getElementById('r-conv'),pc,'pct');animate(document.getElementById('r-ag'),pa,'pct');
+      document.getElementById('f-read').innerHTML='A cada 10 pessoas que pedem contato pelo site, <b>'+Math.round(pc/10)+' conversam com a recepção</b> e <b>'+Math.round(pa/10)+' chegam à fila de agendamento</b>.';
+    }
+    animate(document.getElementById('mx-site'),site);animate(document.getElementById('mx-meta'),meta);animate(document.getElementById('mx-call'),call);
+    var mix=document.getElementById('mix').children;
+    mix[0].style.width=(site/leads*100)+'%';mix[1].style.width=(meta/leads*100)+'%';mix[2].style.width=(call/leads*100)+'%';
+    // destaque do mês nas barras
+    document.querySelectorAll('.vbars[data-months] .vb').forEach(function(vb,i){vb.classList.toggle('dim',p!=='all'&&i!==+p)});
+  }
+
+  function bars(id,labels,series,colors,opts){
+    opts=opts||{}; var el=document.getElementById(id); var tot=labels.map(function(_,i){return series.reduce(function(s,a){return s+a[i]},0)});
+    var max=Math.max.apply(null,tot);
+    el.innerHTML=labels.map(function(l,i){
+      var segs=series.map(function(a,k){return '<div class="seg" style="height:'+(tot[i]?a[i]/tot[i]*100:0)+'%;background:'+colors[k]+'"></div>'}).join('');
+      var sub=opts.sub?'<br><span style="font-size:11px">'+opts.sub[i]+'</span>':'';
+      return '<div class="vb"><span class="num">'+nf.format(tot[i])+'</span><div class="stack" data-h="'+(tot[i]/max*78)+'%">'+segs+'</div><span class="lab">'+l+sub+'</span></div>';
+    }).join('');
+    if(opts.months) el.dataset.months='1';
+  }
+  bars('g-bars',M,[D.gWa,D.gCall],['var(--g700)','var(--mint)'],{months:1});
+  bars('m-bars',M,[D.mConv],['var(--meta)'],{months:1,sub:D.mInv.map(function(v){return brl(v,0)})});
+  bars('l-bars',M,[D.site,D.mConv,D.gCall],['var(--g700)','var(--meta)','var(--mint)'],{months:1,sub:D.gInv.map(function(v,i){return brl(v+D.mInv[i],0)})});
+  bars('r-bars',D.recep.lab,[D.recep.v],['var(--g500)']);
+
+  var reveals=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return; var t=e.target; t.classList.add('in');
+    t.querySelectorAll('.fill').forEach(function(f){f.style.width=f.dataset.w});
+    t.querySelectorAll('.vb .stack').forEach(function(c){c.style.height=c.dataset.h});
+    t.querySelectorAll('.fbar').forEach(function(b){b.style.width=b.dataset.fw+'%'});
+    t.querySelectorAll('[data-count]').forEach(function(c){animate(c,parseFloat(c.dataset.count),c.dataset.fmt)});
+    io.unobserve(t);
+  })},{threshold:.15});
+  reveals.forEach(function(el){io.observe(el)});
+
+  var btns=document.querySelectorAll('.filter button');
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    btns.forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
+    render(b.dataset.p==='all'?'all':+b.dataset.p);
+  })});
+  render('all');
+
+  window.addEventListener('beforeprint',function(){
+    reduce=true;
+    reveals.forEach(function(t){t.classList.add('in');
+      t.querySelectorAll('.fill').forEach(function(f){f.style.width=f.dataset.w});
+      t.querySelectorAll('.vb .stack').forEach(function(c){c.style.height=c.dataset.h});
+      t.querySelectorAll('.fbar').forEach(function(b){b.style.width=b.dataset.fw+'%'});
+      t.querySelectorAll('[data-count]').forEach(function(c){animate(c,parseFloat(c.dataset.count),c.dataset.fmt)});
+    });
+    var on=document.querySelector('.filter button.on'); render(on.dataset.p==='all'?'all':+on.dataset.p);
+  });
+
+  // navegação ativa
+  var links=document.querySelectorAll('.nav a');
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('section[id]').forEach(function(s){so.observe(s)});
+
+  // download protegido: AES-GCM + PBKDF2 (600 mil iterações), decifrado no navegador
+  document.getElementById('dl-form').addEventListener('submit',async function(ev){
+    ev.preventDefault();
+    var msg=document.getElementById('dl-msg'),btn=document.getElementById('dl-btn');
+    msg.style.color='var(--muted)';msg.textContent='Abrindo a planilha…';btn.disabled=true;
+    try{
+      var r=await fetch('lista-conferencia-set-nov-2026.enc',{cache:'no-store'});
+      if(!r.ok)throw new Error('arquivo');
+      var buf=new Uint8Array(await r.arrayBuffer());
+      var salt=buf.slice(0,16),iv=buf.slice(16,28),ct=buf.slice(28);
+      var base=await crypto.subtle.importKey('raw',new TextEncoder().encode(document.getElementById('dl-pass').value),'PBKDF2',false,['deriveKey']);
+      var key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:salt,iterations:600000,hash:'SHA-256'},base,{name:'AES-GCM',length:256},false,['decrypt']);
+      var plain;
+      try{plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:iv},key,ct)}catch(e){throw new Error('senha')}
+      var url=URL.createObjectURL(new Blob([plain],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}));
+      var a=document.createElement('a');a.href=url;a.download='IMOF-leads-digitais-conferencia-set-nov-2026.xlsx';document.body.appendChild(a);a.click();a.remove();
+      setTimeout(function(){URL.revokeObjectURL(url)},4000);
+      msg.style.color='var(--g500)';msg.textContent='Planilha baixada.';document.getElementById('dl-pass').value='';
+    }catch(e){
+      msg.style.color='var(--down)';
+      msg.textContent=e.message==='senha'?'Senha incorreta.':(location.protocol==='file:'?'Abra pelo link publicado para baixar.':'Não foi possível abrir o arquivo. Tente de novo.');
+    }finally{btn.disabled=false}
+  });
+})();
+</script>
+</body>
+</html>
